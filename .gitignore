@@ -8,6 +8,9 @@ venv/
 venv312/
 .env/
 
+# matplotlib cache
+.matplotlib/
+
 # mac
 .DS_Store
 
