@@ -25,3 +25,9 @@ data/
 # logs
 *.log
 
+# API keys — never commit
+.env
+
+# debate CLI output
+out/
+

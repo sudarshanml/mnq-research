@@ -1,0 +1,14 @@
+---
+description: MNQ multi-agent debate workflow (Cursor models, no API keys)
+globs: out/debate/**/*.md
+---
+
+# MNQ debate workflow
+
+When the user is working under `out/debate/` or asks about the MNQ debate:
+
+1. **Facts** live in `out/debate/snapshot.md` — do not invent prices; cite snapshot numbers.
+2. Each **agent** (TrendAgent, MeanRevertAgent, RiskAgent) must reply with **only** a single JSON object matching:
+   - `role`, `side` (`buy`|`sell`|`hold`), `entry_price` (number or null), `confidence` (0–1), `rationale` (string).
+3. The **chair** merges agent JSON + snapshot and outputs one JSON with `side`, `entry_price`, `confidence`, `rationale`, optional `dissent_summary`.
+4. Remind: not financial advice; no trade execution from this repo.

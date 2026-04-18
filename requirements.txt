@@ -28,4 +28,10 @@ soupsieve==2.8.3
 typing_extensions==4.15.0
 urllib3==2.6.3
 websockets==16.0
+anthropic==0.96.0
+google-genai==1.73.1
+json-repair==0.59.4
+openai==2.32.0
+python-dotenv==1.2.2
+streamlit==1.56.0
 yfinance==1.1.0
